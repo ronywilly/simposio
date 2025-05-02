@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simposio Nacional de Medicina 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1581595214211-59a3d58cb4dc?ixlib=rb-1.2.1') center/cover;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .nav {
+            background: #005792;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin: 60px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #005792;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+
+        .schedule-item {
+            border-left: 3px solid #005792;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .speaker-card {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 30px;
+            margin: 30px 0;
+            align-items: center;
+        }
+
+        .speaker-card img {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 200px;
+        }
+
+        .register-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #005792;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background: #002347;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .speaker-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Simposio Nacional de Medicina 2025</h1>
+        <p>Avances en Investigación y Práctica Clínica</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#programa">Programa</a>
+        <a href="#expositores">Expositores</a>
+        <a href="#registro">Registro</a>
+    </nav>
+
+    <main class="container">
+        <section id="inicio" class="section">
+            <h2>Bienvenidos al Simposio</h2>
+            <p>Únase a líderes médicos internacionales en este evento de tres días dedicado a los últimos avances en medicina...</p>
+        </section>
+
+        <section id="programa" class="section">
+            <h2>Programa del Evento</h2>
+            <div class="schedule-item">
+                <h3>Día 1: Medicina Innovadora</h3>
+                <p>9:00 AM - Apertura y Conferencia Magistral</p>
+                <p>11:00 AM - Cierre</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Día 2: Medicina Moderna</h3>
+                <p>9:00 AM - Apertura y Conferencia Magistral</p>
+                <p>11:00 AM - Cierre</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Día 3: Medicina Contemporanea</h3>
+                <p>9:00 AM - Apertura y Conferencia Magistral</p>
+                <p>11:00 AM - Cierre</p>
+            </div>
+            <!-- Agregar más días y actividades -->
+        </section>
+
+        <section id="expositores" class="section">
+            <h2>Expositores Destacados</h2>
+	<div style="display: flex; gap: 10px; background-color: rgba(0,0,0,0.1); padding: 20px; margin: 10px; justify-content: center;">
+            <div class="speaker-card" style="display: flex; flex-direction:column; flex: 1;" >
+                <img src="imagenes/foto1.jpg" alt="Expositor">
+                <div>
+                    <h3>Dr. Juan Pérez</h3>
+                    <p>Especialista en ABC - Universidad XYZ</p>
+                    <p>Tema: Uno</p>
+                </div>
+            </div>
+            <div class="speaker-card" style="display: flex; flex-direction:column; flex: 1;" >
+                <img src="imagenes/foto2.jpg" alt="Expositor">
+                <div>
+                    <h3>Dra. María García</h3>
+                    <p>Especialista en ABC - Universidad XYZ</p>
+                    <p>Tema: Dos</p>
+                </div>
+            </div>
+            <div class="speaker-card" style="display: flex; flex-direction:column; flex: 1;" >
+                <img src="imagenes/foto3.jpg" alt="Expositor">
+                <div>
+                    <h3>Dr. Luis López</h3>
+                    <p>Especialista en ABC - Universidad XYZ</p>
+                    <p>Tema: Tres</p>
+                </div>
+            </div>
+        </div>
+            <!-- Agregar más expositores -->
+        </section>
+
+        <section id="registro" class="section">
+            <h2>Registro</h2>
+            <form class="register-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <select>
+                    <option>Seleccione especialidad</option>
+                    <option>Cardiología</option>
+                    <option>Neurología</option>
+                </select>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: info@simposiomedico.com | Tel: +123 456 789</p>
+        <p>© 2024 Simposio Internacional de Medicina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
