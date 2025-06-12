@@ -15,25 +15,27 @@
         body {
             line-height: 1.6;
             color: #333;
+	    background-color: #f7d6ad;
         }
 
         .header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                        url('https://images.unsplash.com/photo-1581595214211-59a3d58cb4dc?ixlib=rb-1.2.1') center/cover;
+            background-color: #f7d6ad;
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 15px;
         }
 
         .nav {
-            background: #005792;
+            background-color: #fec172;	     
             padding: 15px;
             position: sticky;
             top: 0;
         }
 
         .nav a {
-            color: white;
+            color: #ff60e0;
+	    text-shadow: 0.5px 0.5px 1px black;	    
+	    font-size: 24px;
             text-decoration: none;
             margin: 0 20px;
             font-weight: bold;
@@ -48,25 +50,26 @@
         .section {
             margin: 60px 0;
             padding: 40px;
-            background: #f8f9fa;
-            border-radius: 10px;
+            background: #fcebd7;
+	    border-radius: 10px;
             box-shadow: 0 2px 15px rgba(0,0,0,0.1);
         }
 
         h1 {
             font-size: 3.2em;
             margin-bottom: 20px;
-	    text-shadow: 2px 2px 20px #005792;
+	    text-shadow: 2px 2px 20px black;
         }
 
         h2 {
-            color: #005792;
+            color: #fec172;
+	    text-shadow: 2px 2px 5px black;
             margin-bottom: 30px;
             font-size: 2.2em;
         }
- 	
+	
         .schedule-item {
-            border-left: 3px solid #005792;
+            border-left: 3px solid #ff60e0;
             padding: 20px;
             margin: 30px 0;
         }
@@ -111,6 +114,24 @@
             font-size: 1.1em;
         }
 
+        	.form-container {
+			width: 100%;
+  			max-width: 700px; /* Ajusta el tamaño del contenedor */
+  			margin: 0 auto;
+  			border-radius: 15px; /* Bordes redondeados */
+  			overflow: hidden; /* Recorta el exceso del iframe */
+  			box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Sombra externa */
+			text-align:center;			
+			font-size: 24px;
+		}		
+
+		.form-container iframe {
+  			width: 100%;
+  			height: 800px; /* Altura personalizada */
+  			border: 2px solid #0cd5d2;
+}
+
+
         footer {
             background: #002347;
             color: white;
@@ -131,24 +152,44 @@
         }
     </style>
 </head>
+
 <body>
     <header class="header">
-        <h1>SIMPOSIO INTERNACIONAL DE GINEOCLOGIA Y OBSTETRICIA</h1>
-        <p style="font-size: 40px; text-shadow: 2px 2px 10px white;">CENTRO MÉDICO MILITAR <p>
-    </header>
+
+	<div style="display: flex; flex-direction: column; background-color: #fec172; padding: 5px; margin: 1px;">
+
+	        <div style="padding: 5px; flex: 1;">
+		        <h1>SIMPOSIO INTERNACIONAL DE GINECOLOGIA Y OBSTETRICIA</h1>
+        		<p style="font-size: 50px; text-shadow: 2px 2px 10px black;">CENTRO MÉDICO MILITAR <p>
+		</div>
+
+		<div style="display: flex; gap: 10px; background-color: #ff60e0; padding: 20px; margin: 5px;">
+		        <div style="padding: 5px; flex: 1;">
+				<img src="imagenes/cmm.gif" width=150 height=150>
+			</div>
+		        <div style="padding: 5px; flex: 1;">
+				<img src="imagenes/gine.jpg" width=150 height=150>
+			</div>
+		        <div style="padding: 5px; flex: 1;">
+				<img src="imagenes/umg.png" width=150 height=150>
+			</div>
+		</div>
+	</div>
+
     </header>
 
     <nav class="nav">
-        <a href="#inicio">Inicio</a>
+        <a href="#bienvenida">Bienvenida</a>
         <a href="#programa">Programa</a>
         <a href="#expositores">Expositores</a>
         <a href="#registro">Registro</a>
     </nav>
 
     <main class="container">
-        <section id="inicio" class="section">
+        <section id="bienvenida" class="section">
             <h2>Bienvenidos al Simposio</h2>
             <p>Únase a líderes médicos internacionales en este evento de tres días dedicado a los últimos avances en medicina...</p>
+	    <br><p  style="text-align:right;"><a href="#" style="color: #fec172; text-decoration: none;">volver</a></p>
         </section>
 
         <section id="programa" class="section">
@@ -168,6 +209,7 @@
                 <p>9:00 AM - Apertura y Conferencia Magistral</p>
                 <p>11:00 AM - Cierre</p>
             </div>
+	    <br><p  style="text-align:right;"><a href="#" style="color: #fec172; text-decoration: none;">volver</a></p>
             <!-- Agregar más días y actividades -->
         </section>
 
@@ -199,9 +241,11 @@
                 </div>
             </div>
         </div>
+	    <br><p  style="text-align:right;"><a href="#" style="color: #fec172; text-decoration: none;">volver</a></p>
             <!-- Agregar más expositores -->
         </section>
 
+<!--
         <section id="registro" class="section">
             <h2>Registro</h2>
             <form class="register-form">
@@ -215,6 +259,22 @@
                 <button type="submit">Registrarse</button>
             </form>
         </section>
+
+-->
+
+<section id="registro" class="section" style="border:1px solid black;" >
+		<h2>Registro</h2>
+		<div class="form-container">
+			<a href="https://forms.gle/NNyMghBucVwGPZxB6" target="_blank" style="text-decoration:none; color: #ff60e0; "><strong>Clic para registrarse</strong></a>
+		</div>
+
+<!--			<div class="form-container">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTyFfFcB9yCvc4FptKzfLU02GeuMq5FNlLIqaCE9O5DrYUSQ/viewform?usp=header"></iframe>
+			</div>
+-->
+	    <br><p  style="text-align:right;"><a href="#" style="color: #fec172; text-decoration: none;">volver</a></p>
+ </section>
+
     </main>
 
     <footer>
